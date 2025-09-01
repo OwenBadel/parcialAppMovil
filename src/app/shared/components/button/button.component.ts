@@ -12,6 +12,9 @@ export class ButtonComponent  implements OnInit {
   @Input() shape: 'round' | 'square' | ''= '';
   @Input() expand: 'full' | 'block' | 'outline' | ''= '';
   @Input() fill: 'solid' | 'clear' | 'outline' | ''= '';
+  @Input() size: 'small' | 'default' | 'large' | '' = '';
+  @Input() type: 'button' | 'submit' | 'reset' = 'button';
+
   constructor() { }
 
   ngOnInit() {}

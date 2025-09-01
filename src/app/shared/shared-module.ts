@@ -13,6 +13,7 @@ import { SidebarComponent } from '../shared/components/sidebar/sidebar.component
 import { ListComponent } from '../shared/components/list/list.component';
 import { ModalComponent } from '../shared/components/modal/modal.component';
 import { UserFormComponent } from '../shared/components/user-form/user-form.component';
+import { Storage } from '../providers/storage';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,8 @@ import { UserFormComponent } from '../shared/components/user-form/user-form.comp
     ModalComponent,
     UserFormComponent
   ],
+
+  providers: [Storage],
   imports: [
     CommonModule,
     FormsModule,
