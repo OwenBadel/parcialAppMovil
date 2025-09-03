@@ -1,14 +1,20 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Storage } from './storage';
+import { StorageProvider } from './storage';
 
-describe('Storage', () => {
-  let service: Storage;
+describe('StorageProvider', () => {
+
+  
+  let service: StorageProvider;
 
   beforeEach(() => {
+
+
     TestBed.configureTestingModule({});
-    service = TestBed.inject(Storage);
+    service = TestBed.inject(StorageProvider);
   });
+
+
 
   it('should be created', () => {
     expect(service).toBeTruthy();

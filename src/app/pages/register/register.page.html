@@ -7,11 +7,8 @@
 
     <app-input label="Email" type="email" [FormController]="emailControl"  [clear]="true" placeholder="owen@gmail.com" [required]="true" labelPlacement="stacked" fill="outline"></app-input>
   
-    <ion-select aria-label="Favorite Fruit" value="apple">
-      <ion-select-option value="apple">Apple</ion-select-option>
-      <ion-select-option value="banana">Banana</ion-select-option>
-      <ion-select-option value="orange">Orange</ion-select-option>
-    </ion-select>    <app-input label="Password" type="password" [FormController]="passwordControl" placeholder="********" [required]="true" labelPlacement="stacked" fill="outline"></app-input>
+   <app-select label="Country"></app-select>
+    <app-input label="Password" type="password" [FormController]="passwordControl" placeholder="********" [required]="true" labelPlacement="stacked" fill="outline"></app-input>
 
 
     <app-button ClickHere="Back" type="submit" size="small" shape="round" expand="block" fill="outline" routerLink="/login"> </app-button>
